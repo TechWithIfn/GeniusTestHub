@@ -44,3 +44,33 @@ Open index.html in a browser or use a local server to preview the site.
 
 This project is still in development.
 Contributions are welcome! Feel free to create pull requests.
+
+## 📂 Directory Structure
+
+GeniusTestHub/                  
+│── index.html                   
+│── about.html                 
+│── contact.html               
+│── open-letter.html            
+│── assets/                      
+│   ├── css/                   
+│   │   ├── style.css           
+│   ├── js/                     
+│   │   ├── script.js           
+│   ├── images/             
+│── tests/                      
+│   ├── tcs.html              
+│   ├── infosys.html           
+│   ├── wipro.html              
+│   ├── amazon.html              
+│   ├── google.html              
+│   ├── microsoft.html          
+│   ├── ibm.html                
+│   ├── capgemini.html            
+│   ├── cognizant.html         
+│   ├── oracle.html            
+│── api/                         
+│   ├── server.js              
+│   ├── questions.json         
+│── README.md                     
+│── LICENSE         
