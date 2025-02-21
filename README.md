@@ -24,7 +24,7 @@ Ensure you have the following installed:
 ### **Setting Up the Environment**  
 1. **Clone the repository:**  
    ```sh
-   git clone https://github.com/yourusername/GeniusTestHub.git
+   git clone https://github.com/TechWithIfn/GeniusTestHub.git
    cd GeniusTestHub
 
 
