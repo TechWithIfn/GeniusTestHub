@@ -45,6 +45,53 @@ Open index.html in a browser or use a local server to preview the site.
 This project is still in development.
 Contributions are welcome! Feel free to create pull requests.
 
+
+## 📌 Website Endpoints & Descriptions
+
+**Main Pages**
+
+## index.html
+- Home Page (Intro & test list)
+## about.html
+- About GeniusTestHub (Mission & Features)
+## contact.html
+ - Contact Form & Support Details
+## open-letter.html
+- Motivational Letter for Students
+
+
+## Test Pages (10 Companies - 25 Questions Each)
+ ## tests/tcs.html 
+
+- TCS Aptitude & DSA Test
+## tests/infosys.html
+
+- Infosys Logical & Coding Test
+## tests/wipro.html
+
+- Wipro Analytical & Reasoning Test
+## tests/amazon.html
+
+- Amazon Data Structures & Aptitude Test
+## tests/google.html
+
+- Google Advanced Coding & Logic Test
+## tests/microsoft.html
+
+- Microsoft Problem-Solving Test
+## tests/ibm.html
+
+- IBM Quantitative & Logical Test
+## tests/capgemini.html
+
+- Capgemini Numerical & Reasoning Test
+## tests/cognizant.html
+
+- Cognizant Programming & Aptitude Test
+## tests/oracle.html
+
+- Oracle Database & CS Fundamentals Test
+
 ## 📂 Directory Structure
 
 GeniusTestHub/                  
@@ -74,3 +121,8 @@ GeniusTestHub/
 │   ├── questions.json         
 │── README.md                     
 │── LICENSE         
+
+
+
+
+
