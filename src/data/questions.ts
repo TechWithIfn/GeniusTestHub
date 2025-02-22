@@ -152,7 +152,7 @@ const dsaQuestions: TestQuestion[] = [
     correctAnswer: 1,
     explanation: "A modified binary search helps find the pivot efficiently. If mid element > last element, pivot is on the right.Otherwise, pivot is on the left.",
     category: "DSA",
-  
+    company: "Microsoft"
   },
   {
     id: 7,
@@ -161,7 +161,7 @@ const dsaQuestions: TestQuestion[] = [
     correctAnswer: 2,
     explanation: "Insertion Sort runs in O(n) for nearly sorted data, while others run in O(n log n).",
     category: "DSA",
-    
+    company: "Microsoft"
   },
   {
      id: 8,
@@ -170,6 +170,7 @@ const dsaQuestions: TestQuestion[] = [
     correctAnswer: 2,
     explanation: "Dijkstra’s Algorithm fails with negative edges.Bellman-Ford handles negative weights in O(V E) time.",
     category: "DSA",
+    company: "Microsoft"
   },
   {
     id: 9,
@@ -178,6 +179,7 @@ const dsaQuestions: TestQuestion[] = [
     correctAnswer: 1,
     explanation: "Balanced BSTs (AVL, Red-Black Trees) maintain height O(log n), giving efficient searches.",
     category: "DSA",
+    company: "Microsoft"
   },
   {
      id: 10,
@@ -186,6 +188,7 @@ const dsaQuestions: TestQuestion[] = [
     correctAnswer: 1,
     explanation: "One main stack stores elements.Another min stack tracks minimum values.",
     category: "DSA",
+    company: "Microsoft"
   },
   {
      id: 11,
@@ -194,6 +197,7 @@ const dsaQuestions: TestQuestion[] = [
     correctAnswer: 1,
     explanation: "Power of 2 numbers have only one set bit in binary.",
     category: "DSA",
+    company: "Microsoft"
   }
 ];
 
