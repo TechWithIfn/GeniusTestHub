@@ -285,9 +285,9 @@ const codingQuestions: TestQuestion[] = [
     question: "Which data structure is most suitable for implementing a Least Recently Used (LRU) Cache?",
     options: ["Stack", "Queue", " Hash Map + Doubly Linked List ", "Circular Queue"],
     correctAnswer: 2,
-    explanation: "Hash Map provides O(1) lookup. Doubly Linked List maintains order and allows efficient eviction of least recently used items.",
-    category: "Coding",
-    company: "Amazon"
+    explanation: "Hash Map provides O(1) lookup Doubly Linked List maintains order and allows efficient eviction of least recently used items.",
+    category: "Dsa",
+   
   }
 ];
 
