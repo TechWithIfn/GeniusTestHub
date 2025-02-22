@@ -287,7 +287,7 @@ const codingQuestions: TestQuestion[] = [
     correctAnswer: 2,
     explanation: "Hash Map provides O(1) lookup. Doubly Linked List maintains order and allows efficient eviction of least recently used items.,.",
     category: "Coding",
-    company: "Google",
+    company: "Google"
   }
 ];
 
