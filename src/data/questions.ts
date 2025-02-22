@@ -232,7 +232,7 @@ const codingQuestions: TestQuestion[] = [
     correctAnswer: 1,
     explanation: "'use strict' enables strict mode which catches common coding mistakes and prevents unsafe actions.",
     category: "Coding",
-    company: "Microsoft"
+    company: "Google"
   },
   {
     id: 4,
