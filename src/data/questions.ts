@@ -220,8 +220,8 @@ const codingQuestions: TestQuestion[] = [
   {
      id: 7,
     question: "What is the worst-case time complexity of Merge Sort?",
-    options: ["O(n)", "O(n²)", "O(n log n) ", "O(log⁡n)"],
-    correctAnswer: 3 ,
+    options: ["O(n)", "O(n²)", "O(n log n) ", "O(log⁡ n)"],
+    correctAnswer: 2,
     explanation: "Merge Sort always divides the array into two halves and merges them back, resulting in O(n log ⁡n) complexity.,.",
     category: "Coding",
     company: "Google"
