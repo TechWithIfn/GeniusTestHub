@@ -357,6 +357,7 @@ const csQuestions: TestQuestion[] = [
 ];
 // Extended VA Questions
 const vaQuestions: TestQuestion[] = [
+  {
 
   id: 1,
     question: "Identify the grammatically correct sentence.",
@@ -365,7 +366,7 @@ const vaQuestions: TestQuestion[] = [
     explanation: "The subject Neither is singular, so it takes a singular verb was not were or have been.",
     category: "VA",
     
-  
+  },
 ];
 
 // Company-specific question generator
