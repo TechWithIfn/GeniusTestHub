@@ -144,6 +144,56 @@ const dsaQuestions: TestQuestion[] = [
     explanation: "Merge sort requires O(n) auxiliary space to store the merged arrays during the sorting process.",
     category: "DSA",
     company: "Microsoft"
+  },
+  {
+     id: 6,
+    question: " Given a sorted rotated array, how can you find the pivot element (smallest element) in O(log n) time",
+    options: ["Linear Search", "Binary Search", "Hash Map", "Stack"],
+    correctAnswer: 1,
+    explanation: "A modified binary search helps find the pivot efficiently. If mid element > last element, pivot is on the right.Otherwise, pivot is on the left.",
+    category: "DSA",
+  
+  },
+  {
+    id: 7,
+    question: "Which sorting algorithm is best for nearly sorted data?",
+    options: ["Merge Sort", "Quick Sort", " Insertion Sort", "Heap Sort"],
+    correctAnswer: 2,
+    explanation: "Insertion Sort runs in O(n) for nearly sorted data, while others run in O(n log n).",
+    category: "DSA",
+    
+  },
+  {
+     id: 8,
+    question: "Which algorithm is best for finding the shortest path in a weighted graph with negative edges?",
+    options: ["Dijkstra’s Algorithm", "Floyd-Warshall Algorithm", " Bellman-Ford Algorithm", "Prim’s Algorithm"],
+    correctAnswer: 2,
+    explanation: "Dijkstra’s Algorithm fails with negative edges.Bellman-Ford handles negative weights in O(V E) time.",
+    category: "DSA",
+  },
+  {
+    id: 9,
+    question: "What is the best time complexity for searching an element in a balanced BST?",
+    options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    correctAnswer: 1,
+    explanation: "Balanced BSTs (AVL, Red-Black Trees) maintain height O(log n), giving efficient searches.",
+    category: "DSA",
+  },
+  {
+     id: 10,
+    question: "Which data structure is best for implementing a Min Stack in O(1) time",
+    options: ["Stack + HashMap", "Two Stacks", "O(n)", "Queue"],
+    correctAnswer: 1,
+    explanation: "One main stack stores elements.Another min stack tracks minimum values.",
+    category: "DSA",
+  },
+  {
+     id: 11,
+    question: "How can you check if a number is a power of 2 in O(1) time",
+    options: ["n % 2 == 0", "n & (n - 1) == 0", "n / 2 == 0", "n << 1"],
+    correctAnswer: 1,
+    explanation: "Power of 2 numbers have only one set bit in binary.",
+    category: "DSA",
   }
 ];
 
