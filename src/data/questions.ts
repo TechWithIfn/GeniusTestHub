@@ -26,7 +26,7 @@ const tcsQuestions: TestQuestion[] = [
     company: "TCS"
   },
   {
-      id: 3,
+    id: 3,
     question: "What is the time complexity of quicksort in the average case?",
     options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
     correctAnswer: 1,
@@ -35,7 +35,7 @@ const tcsQuestions: TestQuestion[] = [
     company: "TCS"
   },
   {
-       id: 3,
+    id: 4,
     question: "What is the time complexity of quicksort in the average case?",
     options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
     correctAnswer: 1,
@@ -83,7 +83,7 @@ const googleQuestions: TestQuestion[] = [
     question: "What is the space complexity of DFS traversal?",
     options: ["O(1)", "O(V+E)", "O(V)", "O(E)"],
     correctAnswer: 2,
-    explanation: "DFS uses a stack that can grow up to the height of the tree, which in worst case is O(V) where V is the number of vertices.",
+    explanation: "DFS uses a stack that can grow up to the height of the tree, which in the worst case is O(V) where V is the number of vertices.",
     category: "DSA",
     company: "Google"
   }
@@ -105,7 +105,7 @@ const dsaQuestions: TestQuestion[] = [
     question: "Which data structure uses LIFO (Last In First Out)?",
     options: ["Queue", "Stack", "Linked List", "Array"],
     correctAnswer: 1,
-    explanation: "A stack follows LIFO principle where the last element added is the first one to be removed.",
+    explanation: "A stack follows the LIFO principle where the last element added is the first one to be removed.",
     category: "DSA",
     company: "Amazon"
   },
@@ -132,7 +132,7 @@ const dsaQuestions: TestQuestion[] = [
     question: "What is the time complexity of inserting an element at the beginning of a linked list?",
     options: ["O(1)", "O(n)", "O(log n)", "O(n²)"],
     correctAnswer: 0,
-    explanation: "Inserting at the beginning of a linked list is O(1) as we only need to update the head pointer.",
+    explanation: "Inserting at the beginning of a linked list is O(1) as only the head pointer needs to be updated.",
     category: "DSA",
     company: "Apple"
   },
@@ -146,29 +146,29 @@ const dsaQuestions: TestQuestion[] = [
     company: "Microsoft"
   },
   {
-     id: 6,
-    question: " Given a sorted rotated array, how can you find the pivot element (smallest element) in O(log n) time",
+    id: 6,
+    question: "Given a sorted rotated array, how can you find the pivot element (smallest element) in O(log n) time?",
     options: ["Linear Search", "Binary Search", "Hash Map", "Stack"],
     correctAnswer: 1,
-    explanation: "A modified binary search helps find the pivot efficiently. If mid element > last element, pivot is on the right.Otherwise, pivot is on the left.",
+    explanation: "A modified binary search helps find the pivot efficiently. If the mid element is greater than the last element, the pivot is on the right; otherwise, it's on the left.",
     category: "DSA",
     company: "Microsoft"
   },
   {
     id: 7,
     question: "Which sorting algorithm is best for nearly sorted data?",
-    options: ["Merge Sort", "Quick Sort", " Insertion Sort", "Heap Sort"],
+    options: ["Merge Sort", "Quick Sort", "Insertion Sort", "Heap Sort"],
     correctAnswer: 2,
-    explanation: "Insertion Sort runs in O(n) for nearly sorted data, while others run in O(n log n).",
+    explanation: "Insertion Sort runs in O(n) for nearly sorted data, making it more efficient than other O(n log n) algorithms in this case.",
     category: "DSA",
     company: "Microsoft"
   },
   {
-     id: 8,
+    id: 8,
     question: "Which algorithm is best for finding the shortest path in a weighted graph with negative edges?",
-    options: ["Dijkstra’s Algorithm", "Floyd-Warshall Algorithm", " Bellman-Ford Algorithm", "Prim’s Algorithm"],
+    options: ["Dijkstra’s Algorithm", "Floyd-Warshall Algorithm", "Bellman-Ford Algorithm", "Prim’s Algorithm"],
     correctAnswer: 2,
-    explanation: "Dijkstra’s Algorithm fails with negative edges.Bellman-Ford handles negative weights in O(V E) time.",
+    explanation: "Dijkstra’s Algorithm fails with negative edges, whereas Bellman-Ford can handle negative weights in O(V E) time.",
     category: "DSA",
     company: "Microsoft"
   },
@@ -177,30 +177,31 @@ const dsaQuestions: TestQuestion[] = [
     question: "What is the best time complexity for searching an element in a balanced BST?",
     options: ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
     correctAnswer: 1,
-    explanation: "Balanced BSTs (AVL, Red-Black Trees) maintain height O(log n), giving efficient searches.",
+    explanation: "Balanced BSTs (like AVL or Red-Black Trees) maintain a height of O(log n), allowing efficient search operations.",
     category: "DSA",
     company: "Microsoft"
   },
   {
-     id: 10,
-    question: "Which data structure is best for implementing a Min Stack in O(1) time",
+    id: 10,
+    question: "Which data structure is best for implementing a Min Stack in O(1) time?",
     options: ["Stack + HashMap", "Two Stacks", "O(n)", "Queue"],
     correctAnswer: 1,
-    explanation: "One main stack stores elements.Another min stack tracks minimum values.",
+    explanation: "One stack is used to store elements while a secondary stack keeps track of the minimum values.",
     category: "DSA",
     company: "Microsoft"
   },
   {
-     id: 11,
-    question: "How can you check if a number is a power of 2 in O(1) time",
+    id: 11,
+    question: "How can you check if a number is a power of 2 in O(1) time?",
     options: ["n % 2 == 0", "n & (n - 1) == 0", "n / 2 == 0", "n << 1"],
     correctAnswer: 1,
-    explanation: "Power of 2 numbers have only one set bit in binary.",
+    explanation: "A number that is a power of 2 has only one set bit in its binary representation.",
     category: "DSA",
     company: "Microsoft"
   }
 ];
 
+// Coding Questions
 const codingQuestions: TestQuestion[] = [
   {
     id: 1,
@@ -216,7 +217,7 @@ const codingQuestions: TestQuestion[] = [
     question: "Which of the following is NOT a JavaScript data type?",
     options: ["undefined", "boolean", "float", "symbol"],
     correctAnswer: 2,
-    explanation: "In JavaScript, there is no specific 'float' type. Numbers are represented as 'number' type.",
+    explanation: "In JavaScript, there is no specific 'float' type. All numbers are of the 'number' type.",
     category: "Coding",
     company: "Facebook"
   },
@@ -258,7 +259,7 @@ const codingQuestions: TestQuestion[] = [
       "A way to close database connections"
     ],
     correctAnswer: 1,
-    explanation: "A closure is a function that has access to variables in its outer (enclosing) lexical scope.",
+    explanation: "A closure is a function that retains access to its lexical scope even when executed outside that scope.",
     category: "Coding",
     company: "Apple"
   },
@@ -267,28 +268,29 @@ const codingQuestions: TestQuestion[] = [
     question: "What is the output of: console.log(0.1 + 0.2 === 0.3)?",
     options: ["true", "false", "undefined", "NaN"],
     correctAnswer: 1,
-    explanation: "Due to floating-point precision in JavaScript, 0.1 + 0.2 is actually 0.30000000000000004, so the comparison returns false.",
+    explanation: "Due to floating-point precision issues, 0.1 + 0.2 results in 0.30000000000000004, making the comparison false.",
     category: "Coding",
     company: "Amazon"
   },
   {
-     id: 7,
+    id: 7,
     question: "What is the worst-case time complexity of Merge Sort?",
-    options: ["O(n)", "O(n²)", "O(n log n) ", "O(log⁡ n)"],
+    options: ["O(n)", "O(n²)", "O(n log n)", "O(log n)"],
     correctAnswer: 2,
-    explanation: "Merge Sort always divides the array into two halves and merges them back, resulting in O(n log ⁡n) complexity.,.",
+    explanation: "Merge Sort consistently divides the array and merges the sorted halves, resulting in O(n log n) complexity.",
     category: "Coding",
     company: "Google"
   }
 ];
 
+// Aptitude Questions
 const aptitudeQuestions: TestQuestion[] = [
   {
     id: 1,
     question: "If a train travels 120 km in 2 hours, what is its speed?",
     options: ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
     correctAnswer: 1,
-    explanation: "Speed = Distance/Time = 120/2 = 60 km/h",
+    explanation: "Speed = Distance / Time = 120 km / 2 hours = 60 km/h",
     category: "Aptitude",
     company: "TCS"
   },
@@ -306,7 +308,7 @@ const aptitudeQuestions: TestQuestion[] = [
     question: "If 8 workers can complete a job in 6 days, how many workers are needed to complete it in 2 days?",
     options: ["16", "24", "32", "40"],
     correctAnswer: 1,
-    explanation: "Using the inverse proportion: (8 × 6) / 2 = 24 workers",
+    explanation: "Using inverse proportion: (8 workers × 6 days) / 2 days = 24 workers",
     category: "Aptitude",
     company: "Wipro"
   },
@@ -315,7 +317,7 @@ const aptitudeQuestions: TestQuestion[] = [
     question: "What percentage of 80 is 20?",
     options: ["15%", "20%", "25%", "30%"],
     correctAnswer: 2,
-    explanation: "20 is 25% of 80 because 20/80 × 100 = 25%",
+    explanation: "20 is 25% of 80 because (20 / 80) × 100 = 25%",
     category: "Aptitude",
     company: "Accenture"
   },
@@ -324,7 +326,7 @@ const aptitudeQuestions: TestQuestion[] = [
     question: "A train 100 meters long passes a pole in 5 seconds. What is its speed in km/hr?",
     options: ["72", "60", "90", "108"],
     correctAnswer: 0,
-    explanation: "Speed = (100 meters/5 seconds) = 20 m/s = 72 km/hr",
+    explanation: "Speed = (100 meters / 5 seconds) = 20 m/s, which converts to 72 km/hr",
     category: "Aptitude",
     company: "Cognizant"
   },
@@ -333,28 +335,29 @@ const aptitudeQuestions: TestQuestion[] = [
     question: "A car travels 150 km in 2.5 hours. What is its speed in meters per second?",
     options: ["12.5 m/s", "16.67 m/s", "20 m/s", "25 m/s"],
     correctAnswer: 1,
-    explanation: "Speed = 150 km/2.5 h = 60 km/h = 16.67 m/s",
+    explanation: "Speed = (150 km / 2.5 hours) = 60 km/hr, which is approximately 16.67 m/s",
     category: "Aptitude",
     company: "TCS"
   }
 ];
 
+// CS Questions
 const csQuestions: TestQuestion[] = [
   {
     id: 1,
-    question: " What is the time complexity of finding the shortest path in a weighted graph using Dijkstra’s algorithm with a priority queue?",
+    question: "What is the time complexity of finding the shortest path in a weighted graph using Dijkstra’s algorithm with a priority queue?",
     options: ["O(V²)", "O(V + V log V)", "O(V + E log E)", "O(E log V)"],
     correctAnswer: 1,
-    explanation: "Using a priority queue (min-heap), Dijkstra’s algorithm runs in O (E + V log V) time, The logarithmic term comes from priority queue operations.",
+    explanation: "Using a priority queue (min-heap), Dijkstra’s algorithm runs in O(E + V log V) time, with the logarithmic term from queue operations.",
     category: "CS",
-
+    company: "CS"
   },
   {
     id: 2,
     question: "What is inheritance in OOP?",
     options: ["Data hiding", "Method overloading", "Creating objects", "Extending class properties"],
     correctAnswer: 3,
-    explanation: "Inheritance allows a class to inherit properties and methods from another class.",
+    explanation: "Inheritance allows a class to inherit properties and methods from a parent class.",
     category: "CS",
     company: "Microsoft"
   },
@@ -372,7 +375,7 @@ const csQuestions: TestQuestion[] = [
     question: "What is a deadlock in operating systems?",
     options: ["System crash", "Infinite loop", "Resource conflict", "Memory leak"],
     correctAnswer: 2,
-    explanation: "Deadlock occurs when processes are waiting for each other's resources, creating a circular dependency.",
+    explanation: "Deadlock occurs when processes are waiting for each other's resources, causing a circular dependency.",
     category: "CS",
     company: "IBM"
   },
@@ -381,7 +384,7 @@ const csQuestions: TestQuestion[] = [
     question: "Which HTTP method is idempotent?",
     options: ["POST", "GET", "PATCH", "DELETE"],
     correctAnswer: 1,
-    explanation: "GET is idempotent as multiple identical requests should have the same effect as a single request.",
+    explanation: "GET is idempotent as multiple identical requests yield the same result.",
     category: "CS",
     company: "Amazon"
   },
@@ -395,32 +398,36 @@ const csQuestions: TestQuestion[] = [
       "Neither shares memory"
     ],
     correctAnswer: 1,
-    explanation: "Threads within the same process share memory space, while processes have their own independent memory space.",
+    explanation: "Threads within the same process share memory space, while processes have separate memory spaces.",
     category: "CS",
     company: "Microsoft"
   },
   {
     id: 6,
-    question: "What data structure is used in Tarjan’s algorithm for finding Strongly Connected Components (SCCs)",
+    question: "What data structure is used in Tarjan’s algorithm for finding Strongly Connected Components (SCCs)?",
     options: ["Queue", "Stack", "Linked List", "Heap"],
     correctAnswer: 1,
-    explanation: "GET is idempotent as multiple identical requests should have the same effect as a single request.",
+    explanation: "Tarjan’s algorithm uses a stack to maintain nodes during DFS for identifying strongly connected components.",
     category: "CS",
-  
+    company: "CS"
   }
 ];
+
 // Extended VA Questions
 const vaQuestions: TestQuestion[] = [
   {
-
-  id: 1,
+    id: 1,
     question: "Identify the grammatically correct sentence.",
-    options: ["Neither of the two boys were selected for the final round", "Neither of the two boys was selected for the final round", "Neither of the two boys have been selected for the final round", "Neither of the two boys were being selected for the final round"],
+    options: [
+      "Neither of the two boys were selected for the final round",
+      "Neither of the two boys was selected for the final round",
+      "Neither of the two boys have been selected for the final round",
+      "Neither of the two boys were being selected for the final round"
+    ],
     correctAnswer: 1,
-    explanation: "The subject Neither is singular, so it takes a singular verb was not were or have been.",
-    category: "VA",
-    
-  } 
+    explanation: "The subject 'neither' is singular, so it takes a singular verb.",
+    category: "VA"
+  }
 ];
 
 // Company-specific question generator
@@ -450,9 +457,9 @@ export const generateQuestionsForCompany = (company: string): TestQuestion[] => 
     .slice(0, 25);
 };
 
-// Subject-specific questions
+// Subject-specific questions generator
 export const generateQuestionsForSubject = (subjectId: string): TestQuestion[] => {
-  switch (subjectId) {
+  switch (subjectId.toLowerCase()) {
     case 'dsa':
       return dsaQuestions;
     case 'coding':
@@ -461,7 +468,6 @@ export const generateQuestionsForSubject = (subjectId: string): TestQuestion[] =
       return aptitudeQuestions;
     case 'cs':
       return csQuestions;
-  
     default:
       return [];
   }
