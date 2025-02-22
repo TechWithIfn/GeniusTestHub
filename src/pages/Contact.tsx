@@ -45,7 +45,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-blue-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="text-gray-600">91+ 9142956500</p>
+                  <p className="text-gray-600">+1 (555) 123-4567</p>
                 </div>
               </div>
               
@@ -55,8 +55,8 @@ const Contact = () => {
                   <h3 className="text-lg font-semibold">Address</h3>
                   <p className="text-gray-600">
                     Greater Noida<br />
-                    , Knowledge Park 3<br />
-                    Uttar Pradesh
+                    Knowledge Park 3 , Pin 201306<br />
+                    Utter Pradesh
                   </p>
                 </div>
               </div>
