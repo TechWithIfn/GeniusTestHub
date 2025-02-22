@@ -225,6 +225,15 @@ const codingQuestions: TestQuestion[] = [
     explanation: "Merge Sort always divides the array into two halves and merges them back, resulting in O(n log ⁡n) complexity.,.",
     category: "Coding",
     company: "Google"
+  },
+  {
+     id: 8,
+    question: "Which data structure is most suitable for implementing a Least Recently Used (LRU) Cache?",
+    options: ["Stack", "Queue", " Hash Map + Doubly Linked List ", "Circular Queue"],
+    correctAnswer: 2,
+    explanation: "Hash Map provides O(1) lookup. Doubly Linked List maintains order and allows efficient eviction of least recently used items.,.",
+    category: "Coding",
+    company: "Google
   }
 ];
 
@@ -345,6 +354,18 @@ const csQuestions: TestQuestion[] = [
     category: "CS",
     company: "Microsoft"
   }
+];
+// Extended VA Questions
+const vaQuestions: TestQuestion[] = [
+
+  id: 1,
+    question: "Identify the grammatically correct sentence.",
+    options: ["Neither of the two boys were selected for the final round", "Neither of the two boys was selected for the final round", "Neither of the two boys have been selected for the final round", "Neither of the two boys were being selected for the final round"],
+    correctAnswer: 1,
+    explanation: "The subject Neither is singular, so it takes a singular verb was not were or have been.",
+    category: "VA",
+    
+  
 ];
 
 // Company-specific question generator
