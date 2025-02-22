@@ -279,15 +279,6 @@ const codingQuestions: TestQuestion[] = [
     explanation: "Merge Sort always divides the array into two halves and merges them back, resulting in O(n log ⁡n) complexity.,.",
     category: "Coding",
     company: "Google"
-  },
-  {
-     id: 8,
-    question: "Which data structure is most suitable for implementing a Least Recently Used (LRU) Cache?",
-    options: ["Stack", "Queue", " Hash Map + Doubly Linked List ", "Circular Queue"],
-    correctAnswer: 2,
-    explanation: "Hash Map provides O(1) lookup Doubly Linked List maintains order and allows efficient eviction of least recently used items.",
-    category: "Dsa",
-   
   }
 ];
 
