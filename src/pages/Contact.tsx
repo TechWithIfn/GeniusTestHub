@@ -37,7 +37,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-blue-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Email</h3>
-                  <p className="text-gray-600">contact@geniustesthub.com</p>
+                  <p className="text-gray-600">sirfanansari93061@gmail.com</p>
                 </div>
               </div>
               
@@ -45,7 +45,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-blue-600 mt-1" />
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">91+ 9142956500</p>
                 </div>
               </div>
               
@@ -54,9 +54,9 @@ const Contact = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Address</h3>
                   <p className="text-gray-600">
-                    123 Tech Street<br />
-                    Silicon Valley, CA 94025<br />
-                    United States
+                    Greater Noida<br />
+                    , Knowledge Park 3<br />
+                    Uttar Pradesh
                   </p>
                 </div>
               </div>
