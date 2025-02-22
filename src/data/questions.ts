@@ -297,12 +297,12 @@ const aptitudeQuestions: TestQuestion[] = [
 const csQuestions: TestQuestion[] = [
   {
     id: 1,
-    question: "What is the primary purpose of normalization in databases?",
-    options: ["Speed up queries", "Reduce data redundancy", "Increase storage space", "Simplify coding"],
+    question: " What is the time complexity of finding the shortest path in a weighted graph using Dijkstra’s algorithm with a priority queue?",
+    options: ["O(V²)", "O(V + V log V)", "O(V + E log E)", "O(E log V)"],
     correctAnswer: 1,
-    explanation: "Normalization helps reduce data redundancy and maintains data integrity in databases.",
+    explanation: "Using a priority queue (min-heap), Dijkstra’s algorithm runs in O (E + V log V) time, The logarithmic term comes from priority queue operations.",
     category: "CS",
-    company: "Oracle"
+
   },
   {
     id: 2,
@@ -353,6 +353,15 @@ const csQuestions: TestQuestion[] = [
     explanation: "Threads within the same process share memory space, while processes have their own independent memory space.",
     category: "CS",
     company: "Microsoft"
+  },
+  {
+    id: 6,
+    question: "What data structure is used in Tarjan’s algorithm for finding Strongly Connected Components (SCCs)",
+    options: ["Queue", "Stack", "Linked List", "Heap"],
+    correctAnswer: 1,
+    explanation: "GET is idempotent as multiple identical requests should have the same effect as a single request.",
+    category: "CS",
+  
   }
 ];
 // Extended VA Questions
