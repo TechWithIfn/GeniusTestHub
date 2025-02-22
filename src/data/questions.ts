@@ -209,13 +209,22 @@ const codingQuestions: TestQuestion[] = [
     company: "Apple"
   },
   {
-    id: 25,
+    id: 6,
     question: "What is the output of: console.log(0.1 + 0.2 === 0.3)?",
     options: ["true", "false", "undefined", "NaN"],
     correctAnswer: 1,
     explanation: "Due to floating-point precision in JavaScript, 0.1 + 0.2 is actually 0.30000000000000004, so the comparison returns false.",
     category: "Coding",
     company: "Amazon"
+  },
+  {
+     id: 7,
+    question: "What is the worst-case time complexity of Merge Sort?",
+    options: ["O(n)", "O(n2)", "O(nlog⁡n) ", "O(log⁡n)"],
+    correctAnswer: 3,
+    explanation: "Merge Sort always divides the array into two halves and merges them back, resulting in O(nlog⁡n) complexity.,.",
+    category: "Coding",
+    company: "Google"
   }
 ];
 
