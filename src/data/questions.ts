@@ -416,8 +416,7 @@ export const generateQuestionsForSubject = (subjectId: string): TestQuestion[] =
       return aptitudeQuestions;
     case 'cs':
       return csQuestions;
-    case 'va':
-       return vaQuestions;
+  
     default:
       return [];
   }
