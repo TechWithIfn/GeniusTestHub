@@ -375,7 +375,7 @@ const vaQuestions: TestQuestion[] = [
     explanation: "The subject Neither is singular, so it takes a singular verb was not were or have been.",
     category: "VA",
     
-  },
+  } 
 ];
 
 // Company-specific question generator
@@ -416,6 +416,8 @@ export const generateQuestionsForSubject = (subjectId: string): TestQuestion[] =
       return aptitudeQuestions;
     case 'cs':
       return csQuestions;
+    case 'va':
+       return vaQuestions;
     default:
       return [];
   }
