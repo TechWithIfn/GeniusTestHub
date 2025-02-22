@@ -32,7 +32,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold mb-6 text-center">Our Mission</h1>
           <p className="text-xl text-center max-w-3xl mx-auto">
-            At GeniusTestHub, we're committed to empowering students and job seekers with the tools and resources they need to excel in technical interviews. Our platform provides comprehensive test preparation materials that align with industry standards and requirements.
+            GeniusTestHub thrived with passion and committed to entirely reform the whole educational system by empowering the students and job seekers with all the tools and resources available at their disposal to help them excel in their respective technical interviews. Herein, the platform goes a step ahead to provide its users with almost exhaustive test preparation material in the line with industry standards and needs.
           </p>
         </div>
       </div>
