@@ -6,11 +6,12 @@ const OpenLetter = () => {
     <div className="min-h-screen pt-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="bg-white rounded-lg shadow-md p-8 md:p-12">
-          <h1 className="text-4xl font-bold text-center mb-8">An Open Letter to Aspiring Developers</h1>
+          <h1 className="text-4xl font-bold text-center mb-8">An Open Letter to the Upcoming Developers</h1>
           
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 mb-6">
-              Dear Future Tech Professional,
+           Dear Future Tech Prodigy,
+
             </p>
             
             <p className="text-gray-700 mb-6">
