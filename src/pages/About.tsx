@@ -65,15 +65,15 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">Industry-Aligned Content</h3>
-              <p className="text-gray-600">Our tests are designed to match the actual assessment patterns of top tech companies.</p>
+              <p className="text-gray-600">We tailor our tests to mirror that of top technical companies in the field.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">Comprehensive Coverage</h3>
-              <p className="text-gray-600">From basic concepts to advanced problems, we cover everything you need to succeed.</p>
+              <p className="text-gray-600">We cover everything that is necessary to help you glow, stretching from the basic ideas to the advanced problems.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-3">Regular Updates</h3>
-              <p className="text-gray-600">Our content is regularly updated to reflect the latest industry trends and requirements.</p>
+              <h3 className="text-xl font-semibold mb-3">Updates</h3>
+              <p className="text-gray-600">We regularly update our content based on latest industrial trends and requirements.</p>
             </div>
           </div>
         </div>
