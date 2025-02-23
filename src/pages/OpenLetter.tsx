@@ -68,9 +68,8 @@ const OpenLetter = () => {
             </div>
 
             <p className="text-gray-700 mb-6">
-              At GeniusTestHub, we're committed to supporting your journey. Our platform is designed to help you build 
-              the skills and confidence needed to excel in technical interviews and beyond. Remember that every practice 
-              test, every solved problem, and every learning moment brings you closer to your goals.
+               At GeniusTestHub, we give you our all to ensure that you are supported on this 
+          journey. Our platform is an avenue for acquiring the skills and confidence to face technical interviews and beyond. Every practice test, every solved problem, and every learn moment brings you one step closer to your goal.
             </p>
 
             <p className="text-gray-700 mb-6">
