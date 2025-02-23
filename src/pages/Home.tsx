@@ -27,7 +27,7 @@ const Home = () => {
               Master Your Technical Interview Journey
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-              Prepare for top tech companies with our comprehensive aptitude and DSA tests
+             Make sure one is ready to seize opportunities in top technology corporations with the help of our enriched in matter theory and practice aptitude and DSA tests.
             </p>
             <Link
               to="/subjects"
