@@ -11,7 +11,7 @@
 -  **MIT Licensed & Open Source**  
 
 ## 🎥 Demo  
-🚀 **Live Preview:** [Coming Soon]  
+🚀 **Live Preview:** [https://youtu.be/NTWOL6v45H4?si=khtDBO_xYrZ282RF]  
 
 ## 🛠️ Setup  
 
