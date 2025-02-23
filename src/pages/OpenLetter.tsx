@@ -14,9 +14,7 @@ const OpenLetter = () => {
             </p>
             
             <p className="text-gray-700 mb-6">
-              We understand the journey you're on. The path to becoming a successful developer is filled with challenges, 
-              learning curves, and moments of doubt. But remember this: every expert was once a beginner, and every 
-              successful developer started exactly where you are now.
+              The journey you're walking, we know. It is very challenging, with many hurdles, lot of things to learn, and self-doubt for every developer, from wannabe to successful. Remember this: every expert was once a beginner, and every successful developer started precisely from the same point you are in at this time.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
@@ -76,23 +74,21 @@ const OpenLetter = () => {
             </p>
 
             <p className="text-gray-700 mb-6">
-              The tech industry needs diverse perspectives, fresh ideas, and passionate individuals like you. Your unique 
-              journey and dedication to learning make you valuable to any organization you'll join in the future.
+                The tech industry needs people with different perspectives, new ideas, and passion-like you. Your individual and unique journey, together with the spirit of learning, gives you added value to whatever organization you may join in the future.
             </p>
 
             <p className="text-gray-700 mb-6">
-              Keep pushing forward, stay curious, and never stop learning. Your potential is limitless, and your future 
-              in tech is bright.
+             Keep pushing ahead, stay curious, and don't stop learning. Your potential is limitless, and you have a brighter future ahead in tech.
             </p>
 
             <p className="text-gray-700 mb-8">
               Best regards,<br />
-              The GeniusTestHub Team
+              The GeniusTestHub Team ❤️
             </p>
 
             <div className="text-center">
               <blockquote className="text-xl italic text-gray-600 border-l-4 border-blue-600 pl-4">
-                "The only way to do great work is to love what you do." - Steve Jobs
+                "Only those who love working, only these persons can do something worthwhile." - Steve Jobs
               </blockquote>
             </div>
           </div>
