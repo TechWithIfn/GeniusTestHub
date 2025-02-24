@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import OpenLetter from './pages/OpenLetter';
 import TestPage from './pages/TestPage';
 import SubjectsPage from './pages/SubjectsPage';
+import SubjectDetails from './pages/SubjectDetails';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/subjects" element={<SubjectsPage />} />
             <Route path="/tests/:company" element={<TestPage />} />
             <Route path="/tests/subject/:subjectId" element={<TestPage />} />
+            <Route path="/subjects/:subjectId" element={<SubjectDetails />} />
           </Routes>
         </main>
         <Footer />
