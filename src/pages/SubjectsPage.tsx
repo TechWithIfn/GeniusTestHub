@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { subjects } from '../data/subjects';
-import { Binary, Code, Calculator, Cpu, BookOpen, Terminal, Users, Clock, Award, Brain } from 'lucide-react';
+import { Binary, Code, Calculator, Cpu, BookOpen, Terminal, Users, Clock, Award, Brain, ArrowRight } from 'lucide-react';
 
 const iconComponents = {
   'Binary': Binary,
@@ -104,12 +104,21 @@ const SubjectsPage = () => {
                       )}
                     </div>
                     
-                    <Link
-                      to={`/tests/subject/${subject.id}`}
-                      className="mt-4 block w-full text-center bg-blue-600 text-white py-2.5 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-                    >
-                      Start Practice
-                    </Link>
+                    <div className="flex gap-3 mt-4">
+                      <Link
+                        to={`/tests/subject/${subject.id}`}
+                        className="flex-1 text-center bg-blue-600 text-white py-2.5 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                      >
+                        Start Practice
+                      </Link>
+                      <Link
+                        to={`/subjects/${subject.id}`}
+                        className="flex items-center justify-center px-4 py-2.5 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+                      >
+                        <span>Learn More</span>
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
