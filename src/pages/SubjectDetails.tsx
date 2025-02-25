@@ -169,20 +169,12 @@ const SubjectDetails = () => {
                 <p className="text-gray-600 mb-4">
                   Master essential concepts and practical applications in {topic.toLowerCase()}.
                 </p>
-                <div className="flex flex-col space-y-2">
-                  <Link
-                    to={`/subjects/${subject.id}/topics/${index}/learn`}
-                    className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
-                  >
-                    Start Learning
-                  </Link>
-                  <Link
-                    to={`/subjects/${subject.id}/topics/${index}/articles`}
-                    className="inline-flex items-center justify-center px-4 py-2 border border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-                  >
-                    View Articles
-                  </Link>
-                </div>
+                <Link
+                  to={`/subjects/${subject.id}/topics/${index}/learn`}
+                  className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                >
+                  Start Learning
+                </Link>
               </div>
             ))}
           </div>
