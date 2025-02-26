@@ -1,51 +1,35 @@
-"use client"
-import { useParams, Link } from "react-router-dom"
-import { subjects } from "../data/subjects"
-import {
-  Binary,
-  Code,
-  Calculator,
-  Cpu,
-  BookOpen,
-  Terminal,
-  ArrowLeft,
-  BookCheck,
-  Users,
-  Target,
-  Brain,
-  Star,
-  Clock,
-  CheckCircle,
-  BarChart,
-} from "lucide-react"
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { subjects } from '../data/subjects';
+import { Binary, Code, Calculator, Cpu, BookOpen, Terminal, ArrowLeft, BookCheck, Users, Target, Brain, Star, Clock, CheckCircle, BarChart, ArrowRight } from 'lucide-react';
 
 const iconComponents = {
-  Binary: Binary,
-  Code: Code,
-  Calculator: Calculator,
-  Cpu: Cpu,
-  BookOpen: BookOpen,
-  Terminal: Terminal,
-}
+  'Binary': Binary,
+  'Code': Code,
+  'Calculator': Calculator,
+  'Cpu': Cpu,
+  'BookOpen': BookOpen,
+  'Terminal': Terminal
+};
 
 const SubjectDetails = () => {
-  const { subjectId } = useParams()
-  const subject = subjects.find((s) => s.id === subjectId)
+  const { subjectId } = useParams();
+  const subject = subjects.find(s => s.id === subjectId);
 
   if (!subject) {
     return (
       <div className="min-h-screen pt-16 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-900">Subject not found</h2>
-          <link to="/subjects" className="mt-4 text-blue-600 hover:text-blue-700">
+          <Link to="/subjects" className="mt-4 text-blue-600 hover:text-blue-700">
             Back to Subjects
           </Link>
         </div>
       </div>
-    )
+    );
   }
 
-  const IconComponent = iconComponents[subject.icon as keyof typeof iconComponents]
+  const IconComponent = iconComponents[subject.icon as keyof typeof iconComponents];
 
   const learningPath = [
     {
@@ -53,59 +37,62 @@ const SubjectDetails = () => {
       description: "Master the basic concepts and principles",
       icon: BookCheck,
       duration: "2-3 weeks",
-      skills: ["Basic concepts", "Core principles", "Foundation knowledge"],
+      skills: ["Basic concepts", "Core principles", "Foundation knowledge"]
     },
     {
       title: "Practice",
       description: "Apply your knowledge through exercises",
       icon: Target,
       duration: "3-4 weeks",
-      skills: ["Problem solving", "Practical application", "Skill building"],
+      skills: ["Problem solving", "Practical application", "Skill building"]
     },
     {
       title: "Advanced Topics",
       description: "Dive deep into complex scenarios",
       icon: Brain,
       duration: "4-5 weeks",
-      skills: ["Complex problems", "Advanced concepts", "Deep understanding"],
+      skills: ["Complex problems", "Advanced concepts", "Deep understanding"]
     },
     {
       title: "Real-world Applications",
       description: "Learn from industry examples",
       icon: Users,
       duration: "2-3 weeks",
-      skills: ["Industry cases", "Real scenarios", "Practical implementation"],
-    },
-  ]
+      skills: ["Industry cases", "Real scenarios", "Practical implementation"]
+    }
+  ];
 
   const keyFeatures = [
     {
       icon: Star,
       title: "Quality Content",
-      description: "Expertly curated materials and practice questions",
+      description: "Expertly curated materials and practice questions"
     },
     {
       icon: Clock,
       title: "Self-Paced",
-      description: "Learn at your own speed with flexible scheduling",
+      description: "Learn at your own speed with flexible scheduling"
     },
     {
       icon: CheckCircle,
       title: "Instant Feedback",
-      description: "Get immediate results and detailed explanations",
+      description: "Get immediate results and detailed explanations"
     },
     {
       icon: BarChart,
       title: "Progress Tracking",
-      description: "Monitor your improvement with detailed analytics",
-    },
-  ]
+      description: "Monitor your improvement with detailed analytics"
+    }
+  ];
 
   return (
     <div className="min-h-screen pt-16 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back Button */}
-        <Link to="/subjects" className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-8 group">
+        <Link
+          to="/subjects"
+          className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-8 group"
+        >
           <ArrowLeft className="h-5 w-5 mr-2 transition-transform group-hover:-translate-x-1" />
           Back to Subjects
         </Link>
@@ -126,12 +113,9 @@ const SubjectDetails = () => {
                 >
                   Start Practice Tests
                 </Link>
-                <Link
-                  to={`/subjects/${subject.id}/syllabus`}
-                  className="inline-flex items-center px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors"
-                >
+                <button className="inline-flex items-center px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors">
                   Download Syllabus
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -142,10 +126,7 @@ const SubjectDetails = () => {
           <h2 className="text-2xl font-bold mb-6">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {keyFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
-              >
+              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
                 <div className="bg-blue-100 rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
                   <feature.icon className="h-6 w-6 text-blue-600" />
                 </div>
@@ -161,20 +142,13 @@ const SubjectDetails = () => {
           <h2 className="text-2xl font-bold mb-6">Topics Covered</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {subject.topics.map((topic, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
-              >
-                <h3 className="text-lg font-semibold mb-2">{topic}</h3>
-                <p className="text-gray-600 mb-4">
-                  Master essential concepts and practical applications in {topic.toLowerCase()}.
-                </p>
-                <Link
-                  to={`/subjects/${subject.id}/topics/${index}/learn`}
-                  className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
-                >
-                  Start Learning
-                </Link>
+              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                <h3 className="text-lg font-semibold mb-3">{topic.name}</h3>
+                <p className="text-gray-600 mb-4">{topic.description}</p>
+                <div className="flex items-center text-blue-600 group cursor-pointer">
+                  <span className="text-sm font-medium">Start Learning</span>
+                  <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+                </div>
               </div>
             ))}
           </div>
@@ -207,7 +181,7 @@ const SubjectDetails = () => {
                 </div>
                 {index < learningPath.length - 1 && (
                   <div className="hidden lg:block absolute -right-4 top-16 transform translate-x-1/2">
-                    <ArrowLeft className="h-6 w-6 text-gray-400 rotate-180" />
+                    <ArrowRight className="h-6 w-6 text-gray-400" />
                   </div>
                 )}
               </div>
@@ -233,7 +207,7 @@ const SubjectDetails = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SubjectDetails
+export default SubjectDetails;
