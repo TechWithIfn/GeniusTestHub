@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { subjects } from '../data/subjects';
-import { Binary, Code, Calculator, Cpu, BookOpen, Terminal, ArrowLeft, BookCheck, Users, Target, Brain, Star, Clock, CheckCircle, BarChart, ArrowRight } from 'lucide-react';
+import { Binary, Code, Calculator, Cpu, BookOpen, Terminal, ArrowLeft, BookCheck, Users, Target, Brain, Star, Clock, CheckCircle, BarChart } from 'lucide-react';
 
 const iconComponents = {
   'Binary': Binary,
@@ -143,11 +143,13 @@ const SubjectDetails = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {subject.topics.map((topic, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
-                <h3 className="text-lg font-semibold mb-3">{topic.name}</h3>
-                <p className="text-gray-600 mb-4">{topic.description}</p>
-                <div className="flex items-center text-blue-600 group cursor-pointer">
-                  <span className="text-sm font-medium">Start Learning</span>
-                  <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+                <h3 className="text-lg font-semibold mb-2">{topic}</h3>
+                <p className="text-gray-600 mb-4">
+                  Master essential concepts and practical applications in {topic.toLowerCase()}.
+                </p>
+                <div className="flex items-center text-blue-600">
+                  <span className="text-sm font-medium">Learn more</span>
+                  <ArrowLeft className="h-4 w-4 ml-2 rotate-180" />
                 </div>
               </div>
             ))}
@@ -181,7 +183,7 @@ const SubjectDetails = () => {
                 </div>
                 {index < learningPath.length - 1 && (
                   <div className="hidden lg:block absolute -right-4 top-16 transform translate-x-1/2">
-                    <ArrowRight className="h-6 w-6 text-gray-400" />
+                    <ArrowLeft className="h-6 w-6 text-gray-400 rotate-180" />
                   </div>
                 )}
               </div>
