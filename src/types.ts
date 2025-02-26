@@ -29,16 +29,10 @@ export interface TestProgress {
   timeSpent?: number;
   startTime?: number;
 }
-
-export interface Topic {
-  name: string;
-  description: string;
-}
-
 export interface Subject {
   id: string;
   name: string;
   icon: string;
   description: string;
-  topics: Topic[];
+  topics: string[];
 }
