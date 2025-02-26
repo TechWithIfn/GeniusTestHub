@@ -37,7 +37,7 @@ const SubjectDetails = () => {
       <div className="min-h-screen pt-16 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-900">Subject not found</h2>
-          <link to="/subjects" className="mt-4 text-blue-600 hover:text-blue-700">
+          <Link to="/subjects" className="mt-4 text-blue-600 hover:text-blue-700">
             Back to Subjects
           </Link>
         </div>
