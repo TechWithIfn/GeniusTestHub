@@ -85,6 +85,32 @@ const dsaQuestions: TestQuestion[] = [
     explanation: "The recursive fibonacci implementation uses O(n) space due to the call stack depth.",
     category: "DSA",
   },
+  {
+    id: 11,
+    question: "What is the time complexity of inserting an element at the beginning of an array?",
+    options: ["O(1)", "O(log n)", "O(n)", "O(n²)"],
+    correctAnswer: 2,
+    explanation:
+      "Inserting at the beginning of an array requires shifting all existing elements, resulting in O(n) time complexity.",
+    category: "DSA",
+  },
+  {
+    id: 12,
+    question: "What is the main advantage of a Red-Black tree over a regular binary search tree?",
+    options: ["Faster search", "Self-balancing", "Less memory usage", "Simpler implementation"],
+    correctAnswer: 1,
+    explanation:
+      "Red-Black trees are self-balancing, ensuring O(log n) time complexity for insertions, deletions, and searches in the worst case.",
+    category: "DSA",
+  },
+  {
+    id: 13,
+    question: "What is the time complexity of the best sorting algorithm for sorting a linked list?",
+    options: ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+    correctAnswer: 1,
+    explanation: "The best sorting algorithm for a linked list (e.g., merge sort) has a time complexity of O(n log n).",
+    category: "DSA",
+  },
 ]
 
 // Coding & Programming Questions
@@ -221,6 +247,42 @@ const codingQuestions: TestQuestion[] = [
     explanation: "Promise.all waits for all promises in an array to resolve and returns their results as an array.",
     category: "Coding",
   },
+  {
+    id: 11,
+    question: "What is the purpose of the 'yield' keyword in Python?",
+    options: ["To define a class", "To create a generator function", "To import modules", "To handle exceptions"],
+    correctAnswer: 1,
+    explanation: "The 'yield' keyword is used to define generator functions, which return an iterator object.",
+    category: "Coding",
+  },
+  {
+    id: 12,
+    question: "What is the difference between '=='' and '===' in JavaScript?",
+    options: [
+      "No difference",
+      "'===' checks value and type, '==' only checks value",
+      "'==' checks value and type, '===' only checks value",
+      "They are used in different programming languages",
+    ],
+    correctAnswer: 1,
+    explanation:
+      "'===' is the strict equality operator that checks both value and type, while '==' performs type coercion before comparison.",
+    category: "Coding",
+  },
+  {
+    id: 13,
+    question: "What is a lambda function in programming?",
+    options: [
+      "A function with multiple parameters",
+      "An anonymous function",
+      "A function that only returns boolean values",
+      "A function that can't be called directly",
+    ],
+    correctAnswer: 1,
+    explanation:
+      "A lambda function is an anonymous function that can have any number of parameters but can only have one expression.",
+    category: "Coding",
+  },
 ]
 
 // Quantitative Aptitude Questions
@@ -304,6 +366,31 @@ const aptitudeQuestions: TestQuestion[] = [
     options: ["4.5", "5.5", "6.5", "7.5"],
     correctAnswer: 1,
     explanation: "Sum = 55; Average = 55/10 = 5.5",
+    category: "Aptitude",
+  },
+  {
+    id: 11,
+    question: "If x% of y is z, what is y% of x?",
+    options: ["x% of z", "y% of z", "z", "Cannot be determined"],
+    correctAnswer: 2,
+    explanation: "If x% of y is z, then (x/100) * y = z. Similarly, y% of x would be (y/100) * x, which is equal to z.",
+    category: "Aptitude",
+  },
+  {
+    id: 12,
+    question: "A car travels 120 km in 2 hours 40 minutes. What is its speed in m/s?",
+    options: ["10 m/s", "12.5 m/s", "15 m/s", "18 m/s"],
+    correctAnswer: 1,
+    explanation: "Speed = 120 km / (2 + 40/60) hours = 45 km/h = 12.5 m/s",
+    category: "Aptitude",
+  },
+  {
+    id: 13,
+    question: "If the sum of two numbers is 15 and their product is 56, what are the two numbers?",
+    options: ["7 and 8", "6 and 9", "5 and 10", "4 and 11"],
+    correctAnswer: 0,
+    explanation:
+      "Using the sum-product method: x + y = 15 and xy = 56. The numbers that satisfy both conditions are 7 and 8.",
     category: "Aptitude",
   },
 ]
@@ -417,6 +504,47 @@ const csQuestions: TestQuestion[] = [
     explanation: "An IP address uniquely identifies devices on a network for communication.",
     category: "CS",
   },
+  {
+    id: 11,
+    question: "What is the purpose of a semaphore in operating systems?",
+    options: [
+      "To encrypt data",
+      "To control access to shared resources",
+      "To allocate memory",
+      "To schedule processes",
+    ],
+    correctAnswer: 1,
+    explanation: "Semaphores are used to control access to shared resources in a multi-processing environment.",
+    category: "CS",
+  },
+  {
+    id: 12,
+    question: "What is the difference between a stack and a queue?",
+    options: [
+      "No difference",
+      "Stack is LIFO, Queue is FIFO",
+      "Stack is FIFO, Queue is LIFO",
+      "They are used in different programming paradigms",
+    ],
+    correctAnswer: 1,
+    explanation:
+      "A stack follows Last-In-First-Out (LIFO) order, while a queue follows First-In-First-Out (FIFO) order.",
+    category: "CS",
+  },
+  {
+    id: 13,
+    question: "What is the purpose of normalization in database design?",
+    options: [
+      "To increase data redundancy",
+      "To eliminate data redundancy and dependency",
+      "To improve query performance",
+      "To encrypt sensitive data",
+    ],
+    correctAnswer: 1,
+    explanation:
+      "Normalization is used to eliminate data redundancy and dependency, organizing data efficiently in a relational database.",
+    category: "CS",
+  },
 ]
 
 // Verbal Ability Questions
@@ -499,6 +627,36 @@ const verbalQuestions: TestQuestion[] = [
     options: ["1-2-3-4", "2-3-1-4", "3-2-1-4", "4-3-2-1"],
     correctAnswer: 2,
     explanation: "The correct order is 'He has never bought a car'.",
+    category: "Verbal",
+  },
+  {
+    id: 11,
+    question: "Choose the word that is closest in meaning to 'Ephemeral':",
+    options: ["Eternal", "Transient", "Sturdy", "Ancient"],
+    correctAnswer: 1,
+    explanation: "'Ephemeral' means short-lived or transient, which is the opposite of eternal.",
+    category: "Verbal",
+  },
+  {
+    id: 12,
+    question: "Identify the correct sentence:",
+    options: [
+      "Neither of the students have completed their assignments.",
+      "Neither of the students has completed their assignment.",
+      "Neither of the students has completed his assignment.",
+      "Neither of the student has completed their assignments.",
+    ],
+    correctAnswer: 2,
+    explanation:
+      "'Neither' is singular, so it takes a singular verb 'has'. 'His' is used because 'student' is singular.",
+    category: "Verbal",
+  },
+  {
+    id: 13,
+    question: "What is the meaning of the idiom 'To bite off more than you can chew'?",
+    options: ["To eat too much", "To take on a task that is too big", "To speak without thinking", "To be greedy"],
+    correctAnswer: 1,
+    explanation: "This idiom means to take on a task that is too big or complex to handle.",
     category: "Verbal",
   },
 ]
@@ -630,6 +788,48 @@ const technicalQuestions: TestQuestion[] = [
     ],
     correctAnswer: 1,
     explanation: "Caching stores frequently accessed data in a faster storage layer to improve performance.",
+    category: "Technical",
+  },
+  {
+    id: 11,
+    question: "What is the purpose of a load balancer in a distributed system?",
+    options: [
+      "To increase system load",
+      "To distribute network traffic across multiple servers",
+      "To balance the power consumption",
+      "To manage database connections",
+    ],
+    correctAnswer: 1,
+    explanation:
+      "A load balancer distributes incoming network traffic across multiple servers to ensure no single server bears too much load.",
+    category: "Technical",
+  },
+  {
+    id: 12,
+    question: "What is the difference between TCP and UDP?",
+    options: [
+      "TCP is faster, UDP is more reliable",
+      "UDP is connectionless, TCP is connection-oriented",
+      "TCP is used for emails, UDP for web browsing",
+      "They are the same protocol",
+    ],
+    correctAnswer: 1,
+    explanation:
+      "TCP is a connection-oriented protocol that ensures reliable, ordered data delivery. UDP is connectionless and doesn't guarantee delivery or order.",
+    category: "Technical",
+  },
+  {
+    id: 13,
+    question: "What is the purpose of an ORM (Object-Relational Mapping) in software development?",
+    options: [
+      "To create user interfaces",
+      "To convert data between incompatible type systems in databases and programming languages",
+      "To optimize database queries",
+      "To manage server resources",
+    ],
+    correctAnswer: 1,
+    explanation:
+      "An ORM is used to convert data between incompatible type systems in object-oriented programming languages and relational databases.",
     category: "Technical",
   },
 ]
